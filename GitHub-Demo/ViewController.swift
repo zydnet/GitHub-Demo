@@ -21,6 +21,11 @@ class ViewController: UIViewController {
         print("chnages in the main branch to test conflict ")
     }
 
-
+    @IBAction func goToDashboard(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
+        let dashboardViewController = storyboard.instantiateViewController(Identifier: "DashboardViewController")
+        navigationController?.pushViewController(dashboardViewController, animated: true)
+    }
+    
 }
 
